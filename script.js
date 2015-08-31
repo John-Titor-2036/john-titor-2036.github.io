@@ -8,5 +8,5 @@ function init(){
     $.get("http://ipinfo.io", function(response) {
         alert(response.postal);
     }, "jsonp");
-    maidChan.alert(zip);
+    //maidChan.alert(zip);
 }
