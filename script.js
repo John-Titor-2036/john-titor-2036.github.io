@@ -6,7 +6,6 @@ function init(){
     doc = maidChan.document;
     var zip = 0;
     $.get("http://ipinfo.io", function(response) {
-        alert(response.postal);
+        alert("Your IP:" + response.postal);
     }, "jsonp");
-    //maidChan.alert(zip);
 }
