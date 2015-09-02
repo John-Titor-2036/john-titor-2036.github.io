@@ -1,5 +1,3 @@
-alert("Hey Johnathan!");
-
 
 function init(){
     var maidChan = window.open("", "width=200, height=400");
