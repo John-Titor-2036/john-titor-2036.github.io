@@ -6,5 +6,5 @@ function init(){
     $.get("http://ipinfo.io", function(response) {
         $.zip = response.postal;
     }, "jsonp");
-    maidChan(zip);
+    maidChan.alert(zip);
 }
