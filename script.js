@@ -17,12 +17,9 @@ function getWeather(zip){
         woeid: '',
         unit: 'f',
         success: function(weather) {
-        html = '<p>'+weather.temp+'&deg;'+weather.units.temp+'</p>';
-  
-            $("#weather").html(html);
-        },
+            alert(parseInt(weather.temp));
         error: function(error) {
-            $("#weather").html('<p>'+error+'</p>');
+            alert("WEATHER NOT FOUND!");
         }
     });
 });
