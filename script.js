@@ -18,6 +18,7 @@ function getWeather(zip){
         unit: 'f',
         success: function(weather) {
             alert(parseInt(weather.temp));
+        },
         error: function(error) {
             alert("WEATHER NOT FOUND!");
         }
