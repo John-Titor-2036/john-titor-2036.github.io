@@ -10,7 +10,7 @@ function init(){
     // Docs at http://simpleweatherjs.com
     $(document).ready(function() {
     $.simpleWeather({
-        location: 60069,
+        location: zip,
         woeid: '',
         unit: 'f',
         success: function(weather) {
