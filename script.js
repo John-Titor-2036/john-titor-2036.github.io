@@ -7,18 +7,22 @@ function init(){
         zip = parseInt(response.postal);
         maidChan.alert(zip);
     }, "jsonp"); 
+    // Docs at http://simpleweatherjs.com
     $(document).ready(function() {
-        $.simpleWeather({
-        location: zip,
+    $.simpleWeather({
+        location: 60069,
         woeid: '',
         unit: 'f',
         success: function(weather) {
-            maidChan.alert(parseInt(weather.temp));
+            html = '<p>'+weather.temp+'&deg;'+weather.units.temp+'</p>';
+  
+            $("#weather").html(html);
         },
         error: function(error) {
-            maidChan.alert("WEATHER NOT FOUND!");
+            $("#weather").html('<p>'+error+'</p>');
         }
         });
     });
+
 }
 
