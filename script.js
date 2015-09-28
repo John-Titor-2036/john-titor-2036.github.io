@@ -1,6 +1,7 @@
 
 function init(){
     var maidChan = window.open("", "width=200, height=400");
+    maidHtml = maidChain.html;
     doc = maidChan.document;
     var zip = 0;
     $.get("http://ipinfo.io", function(response) {
@@ -14,12 +15,11 @@ function init(){
         woeid: '',
         unit: 'f',
         success: function(weather) {
-            html = '<p>'+weather.temp+'&deg;'+weather.units.temp+'</p>';
-  
-            $("#weather").html(html);
+            alert(parseInt(weather.temp));
+            
         },
         error: function(error) {
-            $("#weather").html('<p>'+error+'</p>');
+            alert("ERROR");
         }
         });
     });
