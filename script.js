@@ -10,6 +10,8 @@ function init(){
     }, "jsonp"); 
     if(zip == 60625){
         console.log("TRUE");
+    }else {
+        console.log(zip);
     }
     // Docs at http://simpleweatherjs.com
     $(document).ready(function() {
