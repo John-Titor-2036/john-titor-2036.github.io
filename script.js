@@ -6,7 +6,7 @@ function init(){
     var zip = 0;
     $.get("http://ipinfo.io", function(response) {
         zip = parseInt(response.postal);
-        maidChan.alert(zip);
+        alert(zip);
     }, "jsonp"); 
     if(zip == 60625){
         console.log("TRUE");
