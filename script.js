@@ -8,6 +8,7 @@ function init(){
         zip = response.postal;
         maidChan.alert(zip);
     }, "jsonp"); 
+    zip = "60625";
     // Docs at http://simpleweatherjs.com
     $(document).ready(function() {
     $.simpleWeather({
