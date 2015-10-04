@@ -15,7 +15,7 @@ function init(){
         woeid: '',
         unit: 'f',
         success: function(weather) {
-            alert(parseInt(weather.temp));
+            alert(parseInt(weather.temp) + weather.units.temp);
             
         },
         error: function(error) {
