@@ -8,7 +8,9 @@ function init(){
         zip = response.postal;
         maidChan.alert(zip);
     }, "jsonp"); 
-    zip = "60625";
+    if(zip == 60625){
+        console.log("TRUE");
+    }
     // Docs at http://simpleweatherjs.com
     $(document).ready(function() {
     $.simpleWeather({
