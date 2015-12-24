@@ -30,4 +30,20 @@ function init(){
     });
 
 }
+function minimize() 
+{
+window.innerWidth = 100;
+window.innerHeight = 100;
+window.screenX = screen.width;
+window.screenY = screen.height;
+alwaysLowered = true;
+}
 
+function Maximize() 
+{
+window.innerWidth = screen.width;
+window.innerHeight = screen.height;
+window.screenX = 0;
+window.screenY = 0;
+alwaysLowered = false;
+}
